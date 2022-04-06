@@ -11,7 +11,7 @@ class HomeController implements InterfaceController
     {
         $view = Twig::fromRequest($request);
         return $view->render($response,'home.html',[
-            'titulo' => 'home index'
+            'titulo' => 'Pagina home'
         ]);
     }
 }
