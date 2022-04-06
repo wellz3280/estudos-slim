@@ -1,0 +1,26 @@
+{
+    "name": "weliton/init-slim",
+    "autoload": {
+        "psr-4": {
+            "Weliton\\InitSlim\\": "src/",
+            "App\\":"app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "weliton",
+            "email": "welingtonzsilva@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/psr7": "^1.5",
+        "slim/slim": "^4.10",
+        "nyholm/psr7": "^1.5",
+        "nyholm/psr7-server": "^1.0",
+        "guzzlehttp/psr7": "^1",
+        "sapphirecat/slim4-http-interop-adapter": "^1.0",
+        "laminas/laminas-diactoros": "^2.9",
+        "php-di/slim-bridge": "^3.2",
+        "slim/twig-view": "^3.3"
+    }
+}
