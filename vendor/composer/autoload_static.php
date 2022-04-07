@@ -30,9 +30,9 @@ class ComposerStaticInit84e38977db2e73c1044b9c4389f98da2
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         'b33e3d135e5d9e47d845c576147bda89' => __DIR__ . '/..' . '/php-di/php-di/src/functions.php',
         '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
-        '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         '829f62e0f735a7ef52311a059968b578' => __DIR__ . '/..' . '/sapphirecat/slim4-http-interop-adapter/setup.php',
     );
 
@@ -75,6 +75,10 @@ class ComposerStaticInit84e38977db2e73c1044b9c4389f98da2
         array (
             'Nyholm\\Psr7\\' => 12,
             'Nyholm\\Psr7Server\\' => 18,
+        ),
+        'M' => 
+        array (
+            'Monolog\\' => 8,
         ),
         'L' => 
         array (
@@ -201,6 +205,10 @@ class ComposerStaticInit84e38977db2e73c1044b9c4389f98da2
         'Nyholm\\Psr7Server\\' => 
         array (
             0 => __DIR__ . '/..' . '/nyholm/psr7-server/src',
+        ),
+        'Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
         'Laminas\\Diactoros\\' => 
         array (

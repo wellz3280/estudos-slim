@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '0eb94be5d07250ce5c1a9d7f8911fd7520473dc8',
+        'reference' => 'd282752ced9b026205021640e2364616bdf385d4',
         'name' => 'weliton/init-slim',
         'dev' => true,
     ),
@@ -98,6 +98,15 @@
             'install_path' => __DIR__ . '/../laminas/laminas-diactoros',
             'aliases' => array(),
             'reference' => '954e2dcfb1607681be44599faac10fc63bb6925a',
+            'dev_requirement' => false,
+        ),
+        'monolog/monolog' => array(
+            'pretty_version' => '2.4.0',
+            'version' => '2.4.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../monolog/monolog',
+            'aliases' => array(),
+            'reference' => 'd7fd7450628561ba697b7097d86db72662f54aef',
             'dev_requirement' => false,
         ),
         'nesbot/carbon' => array(
@@ -263,6 +272,12 @@
             'reference' => 'fe5ea303b0887d5caefd3d431c3e61ad47037001',
             'dev_requirement' => false,
         ),
+        'psr/log-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '1.0.0 || 2.0.0 || 3.0.0',
+            ),
+        ),
         'psr/simple-cache' => array(
             'pretty_version' => '1.0.1',
             'version' => '1.0.1.0',
@@ -398,7 +413,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '0eb94be5d07250ce5c1a9d7f8911fd7520473dc8',
+            'reference' => 'd282752ced9b026205021640e2364616bdf385d4',
             'dev_requirement' => false,
         ),
     ),

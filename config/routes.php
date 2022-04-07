@@ -10,8 +10,6 @@ use Slim\App;
 use Weliton\InitSlim\Application\Middleware\HelloMiddleware;
 use Weliton\InitSlim\Application\Middleware\NameMiddleware;
 
-use function DI\get;
-
 return function(App $app){
     $app->get('/',HomeController::class. ':index')
     ->add(HelloMiddleware::class)
