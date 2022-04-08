@@ -1,6 +1,12 @@
 <?php
+    declare(strict_types=1);
 
- return  $config = [
+use DI\Container;
+use Slim\App;
+
+return function(Container $container){
+    
+   return [
         'settings' => [
             'displayErrorDetails' => true,
     
@@ -11,3 +17,5 @@
             ],
         ],
     ];
+
+};
