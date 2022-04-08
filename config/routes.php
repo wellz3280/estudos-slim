@@ -2,21 +2,20 @@
 
 declare(strict_types=1);
 
+use App\Controller\FormController;
 use App\Controller\HomeController;
 use App\Controller\JsonController;
 use App\Controller\PostController;
 use App\Controller\TesteController;
 use Slim\App;
-use Weliton\InitSlim\Application\Middleware\HelloMiddleware;
-use Weliton\InitSlim\Application\Middleware\NameMiddleware;
+use Weliton\InitSlim\Application\Middleware\ArrMiddleware;
 
 return function(App $app){
-    $app->get('/',HomeController::class. ':index')
-    ->add(HelloMiddleware::class)
-    ->add(NameMiddleware::class);
+    $app->get('/',HomeController::class. ':index');
     
     $app->get('/json/{name}/{idade}',JsonController::class.':index');
-    $app->get('/post', PostController::class.':index');
+    $app->get('/teste/{usuario}/{senha}', TesteController::class.':index')->add(ArrMiddleware::class);
+    $app->get('/form',FormController::class.':index');
     
-    $app->get('/teste', TesteController::class.':index');
+    $app->post('/post', PostController::class.':index');
 };

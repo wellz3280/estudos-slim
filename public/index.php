@@ -1,10 +1,8 @@
 <?php
 
 use DI\Container;
-use Slim\App;
 use Slim\Factory\AppFactory;
-use Weliton\InitSlim\Application\Middleware\HelloMiddleware;
-use Weliton\InitSlim\Application\Middleware\NameMiddleware;
+
 
 require __DIR__.'/../vendor/autoload.php';
 
@@ -29,6 +27,5 @@ $twig($app);
 //rotas
 $routes = require __DIR__.'/../config/routes.php';
 $routes($app);
-
 
 $app->run();
