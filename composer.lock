@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f2c3d26ec3737fa6afa8dadde8ab4c91",
+    "content-hash": "0bea99ee6ae0deb42e6ed1957ae58f4a",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -2694,12 +2694,52 @@
                 }
             ],
             "time": "2022-03-25T09:37:52+00:00"
+        },
+        {
+            "name": "weliton/shine",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wellz3280/shine.git",
+                "reference": "b907af1cda809124b907376a6ea692540f7c8e7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wellz3280/shine/zipball/b907af1cda809124b907376a6ea692540f7c8e7a",
+                "reference": "b907af1cda809124b907376a6ea692540f7c8e7a",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Weliton\\Shine\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "weliton",
+                    "email": "welingtonzsilva@gmail.com"
+                }
+            ],
+            "description": "Packge to make sql queries",
+            "support": {
+                "issues": "https://github.com/wellz3280/shine/issues",
+                "source": "https://github.com/wellz3280/shine/tree/master"
+            },
+            "time": "2022-03-25T06:48:44+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "weliton/shine": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
