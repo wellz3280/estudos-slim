@@ -16,6 +16,10 @@ $settings($container);
 
 $app = AppFactory::create();
 
+//monolog
+$logger = require __DIR__.'/../config/logger.php';
+$logger($app);
+
 // erros
 $errors = require __DIR__.'/../config/middlewareError.php';
 $errors($app);

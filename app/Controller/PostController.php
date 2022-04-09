@@ -10,7 +10,6 @@ class PostController implements InterfaceController
     {
         
     
-
         return $response;
     }
 }

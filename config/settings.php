@@ -28,7 +28,13 @@ return function(Container $container){
                     'charset'   => 'utf8',
                     'collation' => 'utf8_unicode_ci',
                     'prefix'    => '',
-                ]
+                ],
+                'logger' =>
+                [
+                    'name' => 'slim-app',
+                    'level' => Monolog\Logger::DEBUG,
+                    'path' => __DIR__ . '/../logs/app.log'
+                ],
             ];
             
         });//fim do container

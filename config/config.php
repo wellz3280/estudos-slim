@@ -7,13 +7,13 @@ use Slim\App;
 return function(Container $container){
     
    return [
-        'settings' => [
+        'config' => [
             'displayErrorDetails' => true,
     
             'logger' => [
                 'name' => 'slim-app',
                 'level' => Monolog\Logger::DEBUG,
-                'path' => __DIR__ . '/../logs/app.log',
+                'path' => __DIR__ . '/../logs/app.log'
             ],
         ],
     ];
