@@ -19,7 +19,7 @@ return function(App $app){
         $app->group('/json',function($app){
         
             $app->get('/carros',JsonController::class.':index');
-            $app->get('/carros/{ano}',JsonController::class.':filter');
+            $app->get('/carros/{marca}',JsonController::class.':filter');
 
         });
     });
