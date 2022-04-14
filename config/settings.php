@@ -22,7 +22,7 @@ return function(Container $container){
                 [
                     'driver' => 'mysql',
                     'host' => 'localhost',
-                    'database' => 'testShine',
+                    'database' => 'testeApi',
                     'username' => 'root',
                     'password' => '',
                     'charset'   => 'utf8',

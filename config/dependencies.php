@@ -1,11 +1,13 @@
 <?php
 
-    $container['db'] = function ($container) {
-        $capsule = new \Illuminate\Database\Capsule\Manager;
-        $capsule->addConnection($container['settings']['db']);
+declare(strict_types=1);
 
-        $capsule->setAsGlobal();
-        $capsule->bootEloquent();
+use Dotenv\Dotenv;
+use Slim\App;
 
-    return $capsule;
+return function(App $app){
+    $env = Dotenv::createImmutable(__DIR__.'/../../');
+    $env->load();
+
+    
 };
