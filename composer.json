@@ -24,7 +24,8 @@
         "slim/twig-view": "^3.3",
         "illuminate/database": "~5.1",
         "monolog/monolog": "^2.4",
-        "vlucas/phpdotenv": "^5.4"
+        "vlucas/phpdotenv": "^5.4",
+        "weliton/shine": "dev-master"
     },
     "config": {
         "allow-plugins": {
