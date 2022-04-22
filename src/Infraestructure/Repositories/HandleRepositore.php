@@ -3,6 +3,7 @@
     namespace Weliton\InitSlim\Infraestructure\Repositories;
 
 use PDO;
+use PDOException;
 
 class HandleRepositore
 {
@@ -27,8 +28,22 @@ class HandleRepositore
         return $result;
     }
 
-    public function create():void
+    public function create():bool
     {
-        echo "create seccess";
+        try{
+            $sql = "INSERT INTO {$this->tableName} (name,raca,idade) Values (:name,:raca,:idade)";
+            $stmt = $this->pdo->prepare($sql);
+            
+            foreach($this->data as $p => $v){
+                $stmt->bindValue(':'.$p,$v);
+            }
+
+            if($stmt->execute()){
+                return true;
+            }
+
+        }catch(PDOException $e){
+            echo "Error".$e->getMessage();
+        }
     }
 }

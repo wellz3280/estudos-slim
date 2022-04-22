@@ -13,7 +13,7 @@ final class Pet
         return[
             'name' => $this->getName(),
             'raca' => $this->getRaca(),
-            'idad' => $this->getIdade(),
+            'idade' => $this->getIdade(),
         ];
     }
 

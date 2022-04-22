@@ -1,5 +1,5 @@
 <?php
-    namespace Weliton\InitSlim\Infraestructure;
+    namespace Weliton\InitSlim\Infraestructure\Persistance;
 
 use Dotenv\Dotenv;
 use PDO;
@@ -8,7 +8,7 @@ class Connection
 {
     public static function startConn():PDO
     {
-        $env = Dotenv::createImmutable(__DIR__.'/../../');
+        $env = Dotenv::createImmutable(__DIR__.'/../../../');
         $env->load();
 
         $conn = new PDO("mysql:host={$_ENV['HOST']};dbname={$_ENV['DB_NAME']}",
