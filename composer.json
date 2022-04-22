@@ -25,7 +25,9 @@
         "illuminate/database": "~5.1",
         "monolog/monolog": "^2.4",
         "vlucas/phpdotenv": "^5.4",
-        "weliton/shine": "dev-master"
+        "weliton/shine": "dev-master",
+        "symfony/cache": "^6.0",
+        "doctrine/orm": "^2.11"
     },
     "config": {
         "allow-plugins": {
